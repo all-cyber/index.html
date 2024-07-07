@@ -1,0 +1,15 @@
+<html>
+  <body>
+    <input id="expression" type="text" placeholder="Enter math expression">
+    <button onclick="calculateAndDisplay()">=</button>
+    <div id="result"></div>
+
+    <script>
+      function calculateAndDisplay() {
+        const expression = document.getElementById("expression").value;
+        const result = eval(expression);
+        document.getElementById("result").innerText = result;
+      }
+    </script>
+  </body>
+</html>
